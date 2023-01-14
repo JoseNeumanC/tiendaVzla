@@ -1,0 +1,122 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.logo {
+  font-size: 3rem;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 34%,
+    rgba(0, 212, 255, 1) 82%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* title */
+.borders {
+  position: absolute;
+  width: 200px;
+  height: 5px;
+  bottom: -10px;
+}
+
+/* items */
+.image-item {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 15px;
+}
+
+/* Cart */
+.cart-preview {
+  display: none;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.cart-preview.active {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 360px;
+  height: 388px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+.cart-items {
+  height: 320px;
+  width: 360px;
+}
+.cart-item {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 8px;
+}
+.product-image {
+  width: 48px;
+  height: 48px;
+}
+.product-info {
+  margin-left: 16px;
+  flex-grow: 1;
+}
+.product-info .product-name {
+  color: #999;
+  font-size: 14px;
+}
+.product-info .product-price {
+  color: #999;
+  font-weight: 700;
+}
+.product-total {
+  margin-left: 16px;
+}
+.product-total .quantity {
+  color: #999;
+  font-size: 14px;
+  text-align: right;
+}
+.product-total .amount {
+  color: #333;
+  font-weight: 700;
+  text-align: right;
+}
+.product-remove {
+  all: unset;
+  margin-left: 24px;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+  font-size: 22px;
+  color: #ccc;
+  text-align: center;
+  transition: all ease-in-out .3s;
+}
+.product-remove:hover {
+  color: #e23d3d;
+}
+.length {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  color: #FFF;
+  background-color: #e23d3d;
+  border-radius: 9999px;
+}
